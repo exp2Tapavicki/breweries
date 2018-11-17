@@ -1,0 +1,19 @@
+{
+  "name": "map-proximity-task",
+  "version": "1.0.0",
+  "description": "Programming challenge for Alva Tech",
+  "main": "main.js",
+  "scripts": {
+    "start": "http-server -p 8584"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:ITCraftship/map-proximity-task.git"
+  },
+  "author": "ITCraftship",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/ITCraftship/map-proximity-task#readme",
+  "dependencies": {
+    "http-server": "0.11.1"
+  }
+}

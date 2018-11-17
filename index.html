@@ -1,0 +1,81 @@
+<!doctype html>
+<html ng-app="mapApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <style>
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+      }
+
+      .marker-list ul {
+        width: 200px;
+        height: auto;
+        top: 70px;
+        right: 20px;
+        position: absolute;
+        background: white;
+        z-index: 999999999;
+      }
+
+      <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #goCenterUI, #setCenterUI {
+        background-color: #fff;
+        border: 2px solid #fff;
+        border-radius: 3px;
+        box-shadow: 0 2px 6px rgba(0,0,0,.3);
+        cursor: pointer;
+        float: left;
+        margin-bottom: 22px;
+        text-align: center;
+      }
+      #goCenterText, #setCenterText {
+        color: rgb(25,25,25);
+        font-family: Roboto,Arial,sans-serif;
+        font-size: 15px;
+        line-height: 25px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      #setCenterUI {
+        margin-left: 12px;
+      }
+    </style>
+
+      </style>
+  </head>
+  <body >
+    <div class="marker-list" ng-controller="MarkersListController">
+    </div>
+    <div id="map"></div> 
+    <script src="./main.js"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAusKq__vEvGY9zG9yoqcArEb4tjJcKYrc&callback=initMap">
+    </script>
+    
+  </body>
+</html>
